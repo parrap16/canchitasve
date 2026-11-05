@@ -1,0 +1,66 @@
+name: caimaneros
+description: "Gamificación de partidos de fútbol amateur."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── Backend / Auth ──────────────────────────────────────────────────────────
+  supabase_flutter: ^2.5.0
+
+  # ── Gestión de estado ────────────────────────────────────────────────────────
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # ── Enrutamiento ─────────────────────────────────────────────────────────────
+  go_router: ^14.2.7
+
+  # ── Variables de entorno ─────────────────────────────────────────────────────
+  flutter_dotenv: ^5.1.0
+
+  # ── UI / Utilidades ──────────────────────────────────────────────────────────
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+
+  # ── Mapas / Geolocalización ─────────────────────────────────────────────────
+  google_maps_flutter: ^2.9.0
+
+  # ── Modelos de datos / Serialización ─────────────────────────────────────────
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # ── Logging ───────────────────────────────────────────────────────────────────
+  logger: ^2.4.0
+
+  # ── Manejo funcional de errores ──────────────────────────────────────────────
+  fpdart: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+  # ── Generadores de código ─────────────────────────────────────────────────────
+  build_runner: ^2.4.11
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.4.3
+  custom_lint: ^0.7.3
+  riverpod_lint: ^2.4.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/
+    - assets/icons/
+    - assets/animations/

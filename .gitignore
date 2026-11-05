@@ -1,0 +1,23 @@
+# Archivos generados por herramientas — no editar manualmente
+**/*.g.dart
+**/*.freezed.dart
+
+# Entorno — NUNCA subir al repositorio
+.env
+
+# Flutter / Dart
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+node_modules
+.next
+.env*.local
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

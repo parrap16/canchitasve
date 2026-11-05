@@ -1,0 +1,48 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    missing_required_param: error
+    missing_return: error
+    dead_code: warning
+    unused_import: warning
+    unused_local_variable: warning
+    invalid_annotation_target: ignore   # requerido por freezed
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+
+linter:
+  rules:
+    # ── Estilo ─────────────────────────────────────────────────────────────────
+    - always_declare_return_types
+    - avoid_print                     # usa AppLogger
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_single_quotes
+    - use_super_parameters
+    - sort_pub_dependencies
+
+    # ── Dart moderno ───────────────────────────────────────────────────────────
+    - use_string_buffers
+    - avoid_dynamic_calls
+    - avoid_type_to_string
+    - unnecessary_lambdas
+
+    # ── Flutter ────────────────────────────────────────────────────────────────
+    - use_key_in_widget_constructors
+    - sized_box_for_whitespace
+    - avoid_unnecessary_containers
